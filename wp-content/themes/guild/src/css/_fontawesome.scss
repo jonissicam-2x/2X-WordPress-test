@@ -1,0 +1,10 @@
+@use './fontawesome/variables' with (
+  // customizing $font-path - make sure it points to where your webfonts are stored in your project
+  $fa-font-path: '../webfonts'
+);
+@use './fontawesome/fontawesome';
+@use './fontawesome/solid' as fa;
+@use './fontawesome/regular' as far;
+@use './fontawesome/brands' as fa-brands;
+
+

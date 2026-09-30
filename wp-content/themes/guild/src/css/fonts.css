@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'VerbExtrabold-Italic';
+    src: url("../../fonts/2E1689_0_0.eot");
+    src: url("../../fonts/2E1689_0_0.eot?#iefix") format("embedded-opentype"), url("../../fonts/2E1689_0_0.woff2") format("woff2"), url("../../fonts/2E1689_0_0.woff") format("woff"), url("../../fonts/2E1689_0_0.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: 'VerbExtrabold';
+    src: url("../../fonts/2E1689_1_0.eot");
+    src: url("../../fonts/2E1689_1_0.eot?#iefix") format("embedded-opentype"), url("../../fonts/2E1689_1_0.woff2") format("woff2"), url("../../fonts/2E1689_1_0.woff") format("woff"), url("../../fonts/2E1689_1_0.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: 'VerbMedium';
+    src: url("../../fonts/VerbMedium.eot");
+    src: url("../../fonts/VerbMedium.eot?#iefix") format("embedded-opentype"), url("../../fonts/VerbMedium.woff2") format("woff2"), url("../../fonts/VerbMedium.woff") format("woff"), url("../../fonts/VerbMedium.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: 'VerbRegular-Italic';
+    src: url("../../fonts/2E1689_2_0.eot");
+    src: url("../../fonts/2E1689_2_0.eot?#iefix") format("embedded-opentype"), url("../../fonts/2E1689_2_0.woff2") format("woff2"), url("../../fonts/2E1689_2_0.woff") format("woff"), url("../../fonts/2E1689_2_0.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: 'VerbRegular';
+    src: url("../../fonts/2E1689_3_0.eot");
+    src: url("../../fonts/2E1689_3_0.eot?#iefix") format("embedded-opentype"), url("../../fonts/2E1689_3_0.woff2") format("woff2"), url("../../fonts/2E1689_3_0.woff") format("woff"), url("../../fonts/2E1689_3_0.ttf") format("truetype")
+}
+@font-face {
+    font-family: 'VerbLight';
+    src: url("../../fonts/verblight-webfont.eot");
+    src: url("../../fonts/verblight-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/verblight-webfont.woff") format("woff"), url("../../fonts/verblight-webfont.ttf") format("truetype")
+}

@@ -1,0 +1,162 @@
+@use 'variables' as *;
+
+.hbspt-form {
+    .hs-input {
+        display: block;
+        width: 100% !important;
+        height: calc(1.5em + .75rem + 2px);
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+
+    .hs-field-desc {
+        font-size: 0.7rem;
+    }
+
+    textarea {
+        height: calc(5.5em + .75rem + 2px) !important;
+    }
+
+    fieldset.form-columns-2, fieldset.form-columns-1, .hs_submit {
+        margin-left: 8px;
+    }
+
+    .hs-input.bootstrap-select {
+        padding: 0;
+        border: 0;
+        .hs-input {
+            display: none !important;
+        }
+    }
+
+    .dropdown-menu {
+        a {
+            background-image: none;
+        }
+    }   
+
+    
+    .hs-button {
+        font-family: "VerbExtrabold", helvetica, arial, sans-serif;
+        display: inline-block;
+        background-color: transparent;
+        color: #000000;
+        border: 1px solid #AFCA0B;
+        border-radius: 0;
+        padding: 10px 40px;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+        transition: all 0.2s;
+        &:hover {
+            text-decoration: none;
+            background-color: #AFCA0B;
+            color: #000000;
+        }
+    
+        @media (max-width: 667px) {
+            padding: 5px 20px;
+            font-size: 0.75em;
+        }    
+    }
+    
+    .hs-error-msgs {
+        color: #dc3232;
+        list-style-type: none;
+        padding: 0;
+        margin: 0 !important;
+    }
+    
+    fieldset.form-columns-2,
+    fieldset.form-columns-1 {
+        max-width: 100% !important;
+        margin-top: 15px !important;
+    }
+    
+    .legal-consent-container {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    a {
+        font-family: $verbMedium;
+        color: $dark-grey;
+        line-height: 20px;
+        transition: all .3s ease-in-out;
+        padding-bottom: 1px;
+        border-radius: 0;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        text-decoration: none;
+    
+        background-image: linear-gradient($white, $white),
+          linear-gradient($green, $green),
+          linear-gradient($green, $green);
+    
+        background-size: 20px 2px, 100% 2px, 0 2px;
+        background-position: calc(20px * -1) 100%, 100% 100%, 0 100%;
+        background-repeat: no-repeat;
+        transition: background-size .3s linear, background-position .3s linear;	
+        
+        &:hover {
+            color: $dark-grey;
+            text-decoration: none;
+            background-size: 20px 2px, 0 2px, 100% 2px;
+            background-position: calc(100% + 20px) 100%, 100% 100%, 0 100%;		
+        }
+        
+        &:not(:disabled):not(.disabled):active {
+            background-color: transparent;
+            border-color: $white;
+            &:focus {
+                box-shadow: none;
+                color: $green;
+            }
+        }
+    }
+}
+
+.text-white {
+    .hbspt-form {
+        .hs-input {
+            background-color: #000116;
+            border: 2px solid #ffffff;
+            color: #FFFFFF !important;
+        }    
+
+        .hs-input.bootstrap-select {
+            padding: 0;
+            border: 0;
+            .hs-input {
+                display: none !important;
+            }
+        }
+
+        a {
+            color: #FFFFFF !important;
+            background-image: linear-gradient(#000000, #000000), linear-gradient(#AFCA0B, #AFCA0B), linear-gradient(#AFCA0B, #AFCA0B);            
+        }
+
+        .dropdown-menu a{
+            color: #212529 !important;
+            background-image: none;
+        }
+
+        .hs-button {
+            color: #ffffff;
+            &:hover {
+                color: #000000;
+            }            
+        }
+    }
+}
+
+

@@ -1,0 +1,140 @@
+@use 'variables' as *;
+
+footer {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	img{
+		height: 165px;
+	}
+	.footer-menu {
+		ul{
+			padding-left: 0;
+			list-style-type: none;
+			
+			li {
+				a {
+					color: $white;
+					text-decoration: none;
+					padding: .2rem 0;
+					&:hover {
+						color: $green;
+					}
+					@media #{$mobile} {
+						padding-top: 0;
+						padding-bottom: 0;
+					}
+				}
+				&.dropdown {
+					font-family: $verbBold;
+					a {
+						padding-left: 0;
+						padding-right: 0;
+						cursor: text;
+						&:hover {
+							color: $white;
+						}
+					}
+				}
+			}
+			&.sub-menu {
+				li {
+					font-family: $verbRegular;
+					a {
+						padding: .2rem 0;
+						cursor: pointer;
+						&:hover {
+							color: $green;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	.socials {
+		ul {
+			padding-left: 0;
+			li {
+				display: inline-block;
+				margin: 0 5px;
+				a {
+					display: block;
+					width: 30px;
+					height: 30px;
+					transition: all .1s;
+					
+					&.youtube {
+						background: url('../../images/icon_youtube.png') no-repeat;
+						&:hover {
+							background-position: 0px -30px;
+						}
+					}
+					&.twitter {
+						background: url('../../images/icon_twitter.png') no-repeat;
+						&:hover {
+							background-position: 0px -30px;
+						}
+					}
+					&.slideshare {
+						background: url('../../images/icon_slideshare.png') no-repeat;
+						&:hover {
+							background-position: 0px -30px;
+						}
+					}
+					&.linkedin {
+						background: url('../../images/icon_linkedin.png') no-repeat;
+						&:hover {
+							background-position: 0px -30px;
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+	@media #{$mobile} {
+		font-size: 16px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}
+
+.copyright {
+	font-size: 0.8rem;
+	word-spacing: normal;
+	ul {
+		margin-bottom: 0 !important;
+	}
+	
+	li{
+		border-right: 1px solid #fff;
+		word-spacing: normal;
+		&:first-child a {
+			padding-left: 0px!important;
+		}
+		a:hover {
+			color: $green;
+		}
+	}
+	#menu-below-footer{
+		.nav-link {
+			display: block;
+			padding: 0 1rem;
+			background: none;
+			border: 0;
+			color: $white;
+			font-weight: $line-height-std;
+			text-decoration: none;
+			transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+		}
+		.nav-link:hover{
+			color: $green;
+		}
+	}
+	.copy_text {
+		display: inline-block;
+		padding: 0 1rem;
+		word-spacing: normal;
+	}
+}
